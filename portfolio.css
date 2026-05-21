@@ -125,6 +125,53 @@ body {
   padding: var(--space-5);
 }
 
+.hero-photo {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+.hero-photo__placeholder {
+  display: grid;
+  min-height: 18rem;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  background:
+    linear-gradient(135deg, rgb(0 0 0 / 0.08) 0 25%, transparent 25% 50%, rgb(0 0 0 / 0.08) 50% 75%, transparent 75%),
+    var(--color-surface-muted);
+  background-size: 18px 18px;
+  color: var(--color-text);
+  overflow: hidden;
+}
+
+.hero-photo__placeholder span {
+  display: grid;
+  width: 7rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--color-border);
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-photo figcaption {
+  color: var(--color-text-subtle);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
 .hero-panel__top,
 .availability {
   display: flex;
